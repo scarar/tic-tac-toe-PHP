@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tic Tac Toe</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+</head>
+<body class="bg-light">
+    <div class="container mt-5">
+        <h1 class="text-center mb-4">Tic Tac Toe</h1>
+        <div class="row justify-content-center">
+            <div class="col-12 col-md-6">
+                <div class="game-board">
+                    <div class="row">
+                        <div class="col-4 cell border" data-index="0"></div>
+                        <div class="col-4 cell border" data-index="1"></div>
+                        <div class="col-4 cell border" data-index="2"></div>
+                    </div>
+                    <div class="row">
+                        <div class="col-4 cell border" data-index="3"></div>
+                        <div class="col-4 cell border" data-index="4"></div>
+                        <div class="col-4 cell border" data-index="5"></div>
+                    </div>
+                    <div class="row">
+                        <div class="col-4 cell border" data-index="6"></div>
+                        <div class="col-4 cell border" data-index="7"></div>
+                        <div class="col-4 cell border" data-index="8"></div>
+                    </div>
+                </div>
+                <div class="text-center mt-4">
+                    <button class="btn btn-primary btn-lg" id="reset-btn">Reset Game</button>
+                </div>
+                <div class="mt-3 text-center" id="status"></div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="js/game.js"></script>
+</body>
+</html>
